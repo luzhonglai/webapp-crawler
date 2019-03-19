@@ -18,7 +18,7 @@ function isEmpty(obj){
 }
 
 app.get('/', function(req, res){
-    res.send('<h1>girls now!</h1>');
+    res.send('<h1>开启成功爬虫---></h1>');
 });
 
 app.get('/tags', function(req, res){
@@ -53,7 +53,8 @@ app.get('/girls', function(req, res){
     var page = req.query.p;
     cid = !isEmpty(cid) ? cid : '0';
     page = !isEmpty(page) ? page : '1';
-    var route = '/dbgroup/show.htm?cid=' + cid + '&pager_offset=' + page;
+    console.log(page)
+    var route = '/dbgroup/show.htm?cid=' + cid + '&pager_offset=' + 4;
     res.header("Content-Type", "application/json; charset=utf-8");
     superagent.get(baseUrl+route)
     .charset('utf-8')
@@ -82,11 +83,10 @@ app.get('/girls', function(req, res){
 });
 
 var options = {
-	key: fs.readFileSync('./keys/server.key'),
-	ca: [fs.readFileSync('./keys/ca.crt')],
-	cert: fs.readFileSync('./keys/server.crt')
+	key: fs.readFileSync('../path/private.pem'),
+	cert: fs.readFileSync('../path/file.crt')
 };
-https.createServer(options, app).listen(3000, function(req, res){
-    // res.writeHead(200);
-    console.log('server is running on port 3000');
+https.createServer(options, app).listen(8080, function(req, res){
+    console.log(req)
+    console.log('server localhost:8080');
 });

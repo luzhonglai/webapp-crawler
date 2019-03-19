@@ -1,15 +1,30 @@
-## 微信小程序 基于Node爬虫
-     
- 微信小程序请求服务器端跨域, express框架处理请求路由来实现服务器端数据抓取之
-返给微信客户端显示数据.
+# weapp-girls
 
+wechat app of girls' photos scrapy spider via Node.js
 
-###  Installation
+# Requirement
 
-Node端 npm i  cnpm  install  
+- Node.js
+- npm
+- [https](http://litt1e-p.github.io/2016/10/20/build-a-https-server-for-localhost/)
+- wechat [MINA](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=1476197490095)
 
-启动项 npm run dev  cnpm  start 
+# Installation
 
-微信端----app 服务器端----sever 
+```
+1. npm install --save
+2. cd Server
+3. node app-douban.js 
+  //or
+  node app-meizitu.js
+4. add it into your MINA dev tools with path 'yourProjectPath/weapp-girls/App' and run
+5. done! 🎉🎉
+```
 
-QQ32395032 
+# Screenshot
+
+<img src="screenshot02.gif" width="320">
+
+# Release Notes
+
+- fix bug of Promise import in MINA v0.11.112300

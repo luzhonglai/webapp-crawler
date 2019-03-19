@@ -39,6 +39,7 @@ function inArr(v, arr) {
 }
 
 app.get('/', function(req, res){
+    console.log(111)
     res.send('<h1>girls now!</h1>');
 });
 
@@ -122,11 +123,10 @@ app.get('/girls', function(req, res){
 });
 
 var options = {
-	key: fs.readFileSync('./keys/server.key'),
-	ca: [fs.readFileSync('./keys/ca.crt')],
-	cert: fs.readFileSync('./keys/server.crt')
+	key: fs.readFileSync('../path/private.pem'),
+	cert: fs.readFileSync('../path/file.crt'),
 };
-https.createServer(options, app).listen(3000, function(req, res){
+https.createServer(options, app).listen(8080, function(req, res){
     // res.writeHead(200);
     console.log('server is running on port 3000');
 });

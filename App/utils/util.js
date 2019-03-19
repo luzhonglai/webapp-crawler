@@ -29,7 +29,7 @@ function getUrl(route, params) {
     if (!isEmpty(params)) {
         param = urlParamCombine(params);
     }
-    return `https://${conf.baseDomain}${route}${param}`;
+    return `https://${conf.host}${route}${param}`;
 }
 
 function matrixArr(list, elementsArr) {

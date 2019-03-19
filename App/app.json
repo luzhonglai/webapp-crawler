@@ -6,7 +6,7 @@
     "window" : {
         "backgroundTextStyle":"light",
         "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "we-girls",
+        "navigationBarTitleText": "爬虫项目",
         "navigationBarTextStyle":"black",
         "windowBackground": "#efeff4"
     },
