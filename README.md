@@ -2,14 +2,14 @@
 
 wechat app of girls' photos scrapy spider via Node.js
 
-# Requirement
+# 要求
 
 - Node.js
 - npm
 - [https](http://litt1e-p.github.io/2016/10/20/build-a-https-server-for-localhost/)
 - wechat [MINA](https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html?t=1476197490095)
 
-# Installation
+# 安装
 
 ```
 1. npm install --save
@@ -21,10 +21,8 @@ wechat app of girls' photos scrapy spider via Node.js
 5. done! 🎉🎉
 ```
 
-# Screenshot
+# 截图
 
 <img src="screenshot02.gif" width="320">
 
-# Release Notes
 
-- fix bug of Promise import in MINA v0.11.112300
