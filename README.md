@@ -1,6 +1,6 @@
 # weapp-girls
 
-wechat app of girls' photos scrapy spider via Node.js
+妹子福利小程序，使用node坐的中间层抓取妹妹，提供小程序展示的dome
 
 # 要求
 
@@ -17,7 +17,6 @@ wechat app of girls' photos scrapy spider via Node.js
 3. node app-douban.js 
   //or
   node app-meizitu.js
-4. add it into your MINA dev tools with path 'yourProjectPath/weapp-girls/App' and run
 5. done! 🎉🎉
 ```
 
